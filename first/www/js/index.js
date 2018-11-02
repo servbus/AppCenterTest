@@ -18,10 +18,11 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-        document.addEventListener("pause", onPause, false);
-        document.addEventListener("resume", onResume, false);
+        document.addEventListener("pause", this.onPause.bind(this), false);
+        document.addEventListener("resume", this.onResume.bind(this), false);
+        document.addEventListener("backbutton", this.onBackKeyDown.bind(this), false);
 
     },
 
@@ -29,20 +30,28 @@ var app = {
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function() {
-        Analytics.trackEvent("deviceready");
+    onDeviceReady: function () {
+        AppCenter.Analytics.setEnabled();
+
+        AppCenter.Analytics.trackEvent("deviceready");
         this.receivedEvent('deviceready');
     },
 
-    onPause: function() {
-        Analytics.trackEvent("pause");
+    onPause: function () {
+        AppCenter.Analytics.trackEvent("pause");
     },
 
-    onResume: function() {
-        Analytics.trackEvent("resume");
+    onResume: function () {
+        AppCenter.Analytics.trackEvent("resume");
     },
+
+    onBackKeyDown: function () {
+        AppCenter.Analytics.trackEvent("backbutton");
+        AppCenter.Crashes.generateTestCrash();
+    },
+
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');

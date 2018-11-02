@@ -19,8 +19,9 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-appcenter-analytics": {},
-      "cordova-plugin-appcenter-crashes": {},
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-appcenter-shared": {},
+      "cordova-plugin-appcenter-crashes": {}
     },
     "platforms": [
       "android"

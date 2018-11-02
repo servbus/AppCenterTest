@@ -1,19 +1,19 @@
 {
-  "_from": "cordova-plugin-appcenter-analytics",
+  "_from": "cordova-plugin-appcenter-analytics@^0.2.0",
   "_id": "cordova-plugin-appcenter-analytics@0.2.0",
   "_inBundle": false,
   "_integrity": "sha1-XgtkZisr/N6dd95ffAAwLnQioDo=",
   "_location": "/cordova-plugin-appcenter-analytics",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "range",
     "registry": true,
-    "raw": "cordova-plugin-appcenter-analytics",
+    "raw": "cordova-plugin-appcenter-analytics@^0.2.0",
     "name": "cordova-plugin-appcenter-analytics",
     "escapedName": "cordova-plugin-appcenter-analytics",
-    "rawSpec": "",
+    "rawSpec": "^0.2.0",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "^0.2.0"
   },
   "_requiredBy": [
     "#USER",
@@ -21,7 +21,7 @@
   ],
   "_resolved": "http://registry.npm.taobao.org/cordova-plugin-appcenter-analytics/download/cordova-plugin-appcenter-analytics-0.2.0.tgz",
   "_shasum": "5e0b64662b2bfcde9d77de5f7c00302e7422a03a",
-  "_spec": "cordova-plugin-appcenter-analytics",
+  "_spec": "cordova-plugin-appcenter-analytics@^0.2.0",
   "_where": "C:\\Users\\cnryb\\Desktop\\AppCenterTest\\first",
   "author": {
     "name": "Microsoft Corporation"

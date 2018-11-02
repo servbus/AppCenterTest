@@ -10,16 +10,15 @@
     "cordova-plugin-appcenter-analytics": {
       "PACKAGE_NAME": "com.servbus.Test"
     },
-    "cordova-plugin-appcenter-crashes": {
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.servbus.Test"
     },
-    "cordova-plugin-whitelist": {
+    "cordova-plugin-appcenter-shared": {
+      "PACKAGE_NAME": "com.servbus.Test"
+    },
+    "cordova-plugin-appcenter-crashes": {
       "PACKAGE_NAME": "com.servbus.Test"
     }
   },
-  "dependent_plugins": {
-    "cordova-plugin-appcenter-shared": {
-      "PACKAGE_NAME": "com.servbus.Test"
-    }
-  }
+  "dependent_plugins": {}
 }
