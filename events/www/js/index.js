@@ -33,7 +33,7 @@ var app = {
     onDeviceReady: function () {
         AppCenter.Analytics.setEnabled(true)
 
-        AppCenter.Analytics.trackEvent("deviceready");
+        AppCenter.Analytics.trackEvent("deviceready", { component: "index" });
         this.receivedEvent('deviceready');
     },
 
